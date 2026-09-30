@@ -10,6 +10,17 @@ import {
   Product,
   StoreSettings,
 } from '../types/store';
+import {
+  deleteCollectionFromCloud,
+  deleteProductFromCloud,
+  seedCloudDataIfEmpty,
+  subscribeCloudCollections,
+  subscribeCloudProducts,
+  subscribeCloudSettings,
+  syncCollectionToCloud,
+  syncProductToCloud,
+  syncSettingsToCloud,
+} from '../services/firebaseService';
 
 const STORAGE_KEYS = {
   PRODUCTS: 'hoorfab_products_v2',
@@ -143,6 +154,35 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
   }, [cart]);
 
+  // Real-time Cloud Synchronization with Firebase Firestore
+  useEffect(() => {
+    seedCloudDataIfEmpty(INITIAL_COLLECTIONS, INITIAL_PRODUCTS, DEFAULT_STORE_SETTINGS);
+
+    const unsubCols = subscribeCloudCollections((cloudCols) => {
+      if (cloudCols && cloudCols.length > 0) {
+        setCollections(cloudCols);
+      }
+    });
+
+    const unsubProds = subscribeCloudProducts((cloudProds) => {
+      if (cloudProds && cloudProds.length > 0) {
+        setProducts(cloudProds);
+      }
+    });
+
+    const unsubSettings = subscribeCloudSettings((cloudSettings) => {
+      if (cloudSettings) {
+        setSettings((prev) => ({ ...prev, ...cloudSettings }));
+      }
+    });
+
+    return () => {
+      unsubCols();
+      unsubProds();
+      unsubSettings();
+    };
+  }, []);
+
   useEffect(() => {
     const handleStorage = (e: StorageEvent) => {
       if (e.key === STORAGE_KEYS.PRODUCTS && e.newValue) {
@@ -170,6 +210,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       createdAt: new Date().toISOString(),
     };
     setProducts((prev) => [newProduct, ...prev]);
+    syncProductToCloud(newProduct.id, newProduct);
     return newProduct;
   };
 
@@ -184,11 +225,13 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
           : item
       )
     );
+    syncProductToCloud(id, updates);
   };
 
   const deleteProduct = (id: string) => {
     setProducts((prev) => prev.filter((prod) => prod.id !== id));
     setCart((prev) => prev.filter((item) => item.product.id !== id));
+    deleteProductFromCloud(id);
   };
 
   const addCollection = (col: Omit<CollectionItem, 'id'>) => {
@@ -197,31 +240,41 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       id: `col-${Date.now()}`,
     };
     setCollections((prev) => [...prev, newCol]);
+    syncCollectionToCloud(newCol.id, newCol);
   };
 
   const updateCollection = (id: string, updates: Partial<CollectionItem>) => {
     setCollections((prev) =>
       prev.map((col) => (col.id === id ? { ...col, ...updates } : col))
     );
+    syncCollectionToCloud(id, updates);
   };
 
   const setCollectionPhoto = (idOrName: string, imageUrl: string) => {
     const target = idOrName.trim().toLowerCase();
+    let matchedId = '';
     setCollections((prev) =>
-      prev.map((col) =>
-        col.id.toLowerCase() === target || col.name.toLowerCase() === target
-          ? { ...col, image: imageUrl }
-          : col
-      )
+      prev.map((col) => {
+        if (col.id.toLowerCase() === target || col.name.toLowerCase() === target) {
+          matchedId = col.id;
+          return { ...col, image: imageUrl };
+        }
+        return col;
+      })
     );
+    if (matchedId) {
+      syncCollectionToCloud(matchedId, { image: imageUrl });
+    }
   };
 
   const deleteCollection = (id: string) => {
     setCollections((prev) => prev.filter((col) => col.id !== id));
+    deleteCollectionFromCloud(id);
   };
 
   const updateSettings = (updates: Partial<StoreSettings>) => {
     setSettings((prev) => ({ ...prev, ...updates }));
+    syncSettingsToCloud(updates);
   };
 
   const resetCatalogToDefaults = () => {
