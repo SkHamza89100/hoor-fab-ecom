@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <defs>
+    <radialGradient id="coordAtmosphere" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#241E19" />
+      <stop offset="45%" stop-color="#171310" />
+      <stop offset="85%" stop-color="#0E0B09" />
+      <stop offset="100%" stop-color="#060504" />
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="50%" cy="32%" r="48%">
+      <stop offset="0%" stop-color="#E5CFA0" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#C9A96E" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#C9A96E" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="champagneSilk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5ECE1" />
+      <stop offset="40%" stop-color="#E4D5C3" />
+      <stop offset="75%" stop-color="#C8B39B" />
+      <stop offset="100%" stop-color="#AC977F" />
+    </linearGradient>
+    <linearGradient id="deepBronze" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A3B2C" />
+      <stop offset="100%" stop-color="#271E16" />
+    </linearGradient>
+    <linearGradient id="zariGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2D6" />
+      <stop offset="40%" stop-color="#E2C68A" />
+      <stop offset="80%" stop-color="#C9A96E" />
+      <stop offset="100%" stop-color="#8F7138" />
+    </linearGradient>
+    <linearGradient id="skin" x1="30%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#F3D5C0" />
+      <stop offset="100%" stop-color="#D0A485" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#coordAtmosphere)" />
+  <rect width="600" height="800" fill="url(#goldGlow)" />
+
+  <!-- Studio Frame -->
+  <path d="M 50 740 L 50 220 C 50 110, 160 50, 300 30 C 440 50, 550 110, 550 220 L 550 740 Z" stroke="url(#zariGold)" stroke-opacity="0.35" stroke-width="1.5" fill="none"/>
+  <circle cx="300" cy="46" r="4" fill="url(#zariGold)" opacity="0.8"/>
+
+  <!-- Model Posture & Hair -->
+  <g transform="translate(300, 155)">
+    <!-- Sleek Hair Bun -->
+    <circle cx="0" cy="-52" r="16" fill="#14100D"/>
+    <path d="M -22 -44 C -26 -65, 26 -65, 22 -44 C 20 -28, 16 -14, 0 -12 C -16 -14, -20 -28, -22 -44 Z" fill="#14100D"/>
+    <!-- Face / Neck -->
+    <path d="M -13 -36 C -13 -18, 13 -18, 13 -36 C 13 -45, -13 -45, -13 -36 Z" fill="url(#skin)"/>
+    <path d="M -8 -18 L 8 -18 L 10 12 L -10 12 Z" fill="url(#skin)"/>
+    <!-- Modern Minimalist Gold Ear Cuff -->
+    <path d="M 14 -28 Q 18 -24, 15 -18" stroke="url(#zariGold)" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <!-- Modern Luxury Silk Coord Set -->
+  <g transform="translate(300, 205)">
+    <!-- Wide-Leg Fluid Trousers / Palazzos -->
+    <path d="M -48 180 L -72 395 L -8 395 L -2 240 L 2 240 L 8 395 L 72 395 L 48 180 Z" fill="url(#deepBronze)" stroke="url(#zariGold)" stroke-width="1.5"/>
+    <line x1="-70" y1="385" x2="-10" y2="385" stroke="url(#zariGold)" stroke-width="2.2"/>
+    <line x1="10" y1="385" x2="70" y2="385" stroke="url(#zariGold)" stroke-width="2.2"/>
+
+    <!-- Asymmetrical Fluid Tunic -->
+    <path d="M -45 -18 L -82 72 L -58 84 L -44 18 L -52 175 L 22 225 L 56 160 L 44 18 L 58 84 L 82 72 L 45 -18 Z" fill="url(#champagneSilk)" stroke="url(#zariGold)" stroke-width="1.8"/>
+
+    <!-- Mandarin Collar & Diagonal Placket Accent -->
+    <path d="M -20 -18 L 0 -8 L 20 -18 L 20 -6 L 0 4 L -20 -6 Z" fill="url(#deepBronze)" stroke="url(#zariGold)" stroke-width="1.5"/>
+    <path d="M 0 4 L 38 115" stroke="url(#zariGold)" stroke-width="2.5"/>
+    <!-- Golden Geometric Buttons -->
+    <circle cx="10" cy="32" r="3.5" fill="url(#zariGold)"/>
+    <circle cx="20" cy="62" r="3.5" fill="url(#zariGold)"/>
+    <circle cx="30" cy="92" r="3.5" fill="url(#zariGold)"/>
+
+    <!-- Elegant Tailored Sleeve Cuffs with Gold Rivets -->
+    <line x1="-80" y1="68" x2="-56" y2="80" stroke="url(#zariGold)" stroke-width="3"/>
+    <circle cx="-68" cy="74" r="2.5" fill="#FAF6EE"/>
+    <line x1="80" y1="68" x2="56" y2="80" stroke="url(#zariGold)" stroke-width="3"/>
+    <circle cx="68" cy="74" r="2.5" fill="#FAF6EE"/>
+
+    <!-- Silk Belt / Wrap Drape -->
+    <path d="M -46 95 Q 0 115, 46 95 L 42 118 Q 0 138, -42 118 Z" fill="url(#deepBronze)" stroke="url(#zariGold)" stroke-width="1.2"/>
+  </g>
+
+  <!-- Footwear & Stance -->
+  <g transform="translate(300, 608)">
+    <ellipse cx="-40" cy="2" rx="14" ry="4" fill="url(#zariGold)"/>
+    <ellipse cx="40" cy="2" rx="14" ry="4" fill="url(#zariGold)"/>
+  </g>
+
+  <!-- Typography & Collection Label -->
+  <line x1="120" y1="710" x2="480" y2="710" stroke="url(#zariGold)" stroke-opacity="0.45" stroke-width="1"/>
+  <text x="300" y="736" text-anchor="middle" fill="#C9A96E" font-family="Georgia, serif" font-size="12" letter-spacing="4">CONTEMPORARY EDIT</text>
+  <text x="300" y="762" text-anchor="middle" fill="#FAF6EE" font-family="Georgia, serif" font-size="20" font-weight="600" letter-spacing="2">COORD SETS</text>
+</svg>

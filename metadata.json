@@ -1,0 +1,8 @@
+{
+  "name": "Hoor Fab",
+  "description": "Elegant and premium Indian-inspired women’s fashion, offering effortless browsing and seamless ordering through WhatsApp for every occasion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

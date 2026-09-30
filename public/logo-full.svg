@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 110" fill="none">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5CFA0" />
+      <stop offset="50%" stop-color="#C9A96E" />
+      <stop offset="100%" stop-color="#9E7B42" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(6, 7)">
+    <rect x="2" y="2" width="92" height="92" rx="18" fill="#0B0B0C" stroke="url(#goldGrad)" stroke-width="2.2" />
+    <rect x="7" y="7" width="82" height="82" rx="14" fill="none" stroke="#C9A96E" stroke-opacity="0.3" stroke-width="1" />
+    <path d="M36 16 C42 11, 54 11, 60 16" stroke="url(#goldGrad)" stroke-width="1.2" stroke-linecap="round" />
+    <circle cx="48" cy="12" r="1.8" fill="#E5CFA0" />
+    <path d="M25 25 H38 M31.5 25 V71 M25 71 H38" stroke="url(#goldGrad)" stroke-width="3.8" stroke-linecap="square" />
+    <path d="M58 25 H71 M64.5 25 V71 M58 71 H71" stroke="url(#goldGrad)" stroke-width="3.8" stroke-linecap="square" />
+    <path d="M31.5 48 H42.5 L48 42.5 L53.5 48 H64.5" stroke="#F7F3EB" stroke-width="2" />
+    <path d="M31.5 48 H42.5 L48 53.5 L53.5 48 H64.5" stroke="url(#goldGrad)" stroke-width="2" />
+    <polygon points="48,44.5 51.5,48 48,51.5 44.5,48" fill="url(#goldGrad)" />
+  </g>
+
+  <text
+    x="120"
+    y="58"
+    fill="#F7F3EB"
+    font-family="'Playfair Display', Georgia, serif"
+    font-size="42"
+    font-weight="600"
+    letter-spacing="7"
+  >
+    HOOR FAB
+  </text>
+
+  <line x1="122" y1="71" x2="432" y2="71" stroke="url(#goldGrad)" stroke-width="1" stroke-opacity="0.55" />
+  <text
+    x="122"
+    y="89"
+    fill="#C9A96E"
+    font-family="'Plus Jakarta Sans', sans-serif"
+    font-size="11"
+    font-weight="500"
+    letter-spacing="5.5"
+  >
+    LUXURY ETHNIC &amp; COUTURE WEAR
+  </text>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <defs>
+    <radialGradient id="dailyAtmosphere" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#261E21" />
+      <stop offset="45%" stop-color="#181315" />
+      <stop offset="85%" stop-color="#0E0A0C" />
+      <stop offset="100%" stop-color="#070506" />
+    </radialGradient>
+    <radialGradient id="roseGlow" cx="50%" cy="32%" r="48%">
+      <stop offset="0%" stop-color="#F2C4CE" stop-opacity="0.22" />
+      <stop offset="60%" stop-color="#C9A96E" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#C9A96E" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="dustyRose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EED5DB" />
+      <stop offset="40%" stop-color="#DBB0BC" />
+      <stop offset="80%" stop-color="#B77E8F" />
+      <stop offset="100%" stop-color="#8F5868" />
+    </linearGradient>
+    <linearGradient id="softCottonIvory" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#FAF5EE" />
+      <stop offset="100%" stop-color="#E7DFC8" />
+    </linearGradient>
+    <linearGradient id="sheerDupattaRose" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFF5F7" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#F4D3DC" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#D4A7B3" stop-opacity="0.3" />
+    </linearGradient>
+    <linearGradient id="zariGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2D6" />
+      <stop offset="40%" stop-color="#E2C68A" />
+      <stop offset="80%" stop-color="#C9A96E" />
+      <stop offset="100%" stop-color="#8F7138" />
+    </linearGradient>
+    <linearGradient id="skin" x1="30%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#F3D5C0" />
+      <stop offset="100%" stop-color="#D0A485" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#dailyAtmosphere)" />
+  <rect width="600" height="800" fill="url(#roseGlow)" />
+
+  <!-- Studio Frame -->
+  <path d="M 50 740 L 50 220 C 50 110, 160 50, 300 30 C 440 50, 550 110, 550 220 L 550 740 Z" stroke="url(#zariGold)" stroke-opacity="0.35" stroke-width="1.5" fill="none"/>
+  <circle cx="300" cy="46" r="4" fill="url(#zariGold)" opacity="0.8"/>
+
+  <!-- Model Posture & Hair -->
+  <g transform="translate(300, 155)">
+    <!-- Soft Waves Hair -->
+    <path d="M -26 -44 C -30 -68, 30 -68, 26 -44 C 28 -15, 20 10, 24 35 C 16 28, 12 10, 10 -15 C -10 -15, -14 15, -24 32 C -20 10, -28 -15, -26 -44 Z" fill="#181312"/>
+    <!-- Face / Neck -->
+    <path d="M -13 -36 C -13 -18, 13 -18, 13 -36 C 13 -45, -13 -45, -13 -36 Z" fill="url(#skin)"/>
+    <path d="M -8 -18 L 8 -18 L 10 12 L -10 12 Z" fill="url(#skin)"/>
+    <!-- Delicate Pearl Studs -->
+    <circle cx="-15" cy="-28" r="2.5" fill="#FAF5EE"/>
+    <circle cx="15" cy="-28" r="2.5" fill="#FAF5EE"/>
+  </g>
+
+  <!-- Breathable Daily Wear Mulmul Kurta -->
+  <g transform="translate(300, 205)">
+    <!-- Breathable Straight Cotton Pants -->
+    <path d="M -38 240 L -30 395 L -8 395 L -12 240 Z" fill="url(#softCottonIvory)" stroke="url(#zariGold)" stroke-width="1.2"/>
+    <path d="M 12 240 L 8 395 L 30 395 L 38 240 Z" fill="url(#softCottonIvory)" stroke="url(#zariGold)" stroke-width="1.2"/>
+    <line x1="-30" y1="385" x2="-8" y2="385" stroke="url(#zariGold)" stroke-width="1.8"/>
+    <line x1="8" y1="385" x2="30" y2="385" stroke="url(#zariGold)" stroke-width="1.8"/>
+
+    <!-- A-Line Straight Daily Kurti in Dusty Rose -->
+    <path d="M -46 -18 L -84 72 L -60 84 L -44 20 L -54 250 L 54 250 L 44 20 L 60 84 L 84 72 L 46 -18 Z" fill="url(#dustyRose)" stroke="url(#zariGold)" stroke-width="1.5"/>
+
+    <!-- Soft Chikankari Inspired Threadwork Neckline -->
+    <path d="M -22 -18 Q 0 18, 22 -18 Z" fill="#FAF5EE" stroke="url(#zariGold)" stroke-width="1.8"/>
+    <path d="M 0 16 L 0 95" stroke="#FAF5EE" stroke-width="2.5"/>
+    <circle cx="0" cy="35" r="2.5" fill="url(#zariGold)"/>
+    <circle cx="0" cy="55" r="2.5" fill="url(#zariGold)"/>
+    <circle cx="0" cy="75" r="2.5" fill="url(#zariGold)"/>
+
+    <!-- Subtle Floral Print Motifs on Kurti -->
+    <g fill="#FAF5EE" opacity="0.6">
+      <circle cx="-25" cy="130" r="2.5"/><circle cx="-21" cy="127" r="1.5"/><circle cx="-29" cy="127" r="1.5"/>
+      <circle cx="25" cy="130" r="2.5"/><circle cx="21" cy="127" r="1.5"/><circle cx="29" cy="127" r="1.5"/>
+      <circle cx="-15" cy="180" r="2.5"/><circle cx="15" cy="180" r="2.5"/>
+      <circle cx="0" cy="215" r="2.5"/>
+    </g>
+
+    <!-- Hem Border -->
+    <rect x="-54" y="235" width="108" height="15" fill="#FAF5EE" fill-opacity="0.35" stroke="url(#zariGold)" stroke-width="1"/>
+
+    <!-- Draped Mulmul Cotton Dupatta -->
+    <path d="M -30 -12 C -80 30, -110 110, -95 210 C -85 290, -45 350, -65 410 L -95 405 C -120 320, -110 160, -60 10 Z" fill="url(#sheerDupattaRose)" stroke="url(#zariGold)" stroke-width="1.2"/>
+  </g>
+
+  <!-- Footwear -->
+  <g transform="translate(300, 608)">
+    <ellipse cx="-19" cy="2" rx="12" ry="4" fill="url(#zariGold)"/>
+    <ellipse cx="19" cy="2" rx="12" ry="4" fill="url(#zariGold)"/>
+  </g>
+
+  <!-- Typography & Collection Label -->
+  <line x1="120" y1="710" x2="480" y2="710" stroke="url(#zariGold)" stroke-opacity="0.45" stroke-width="1"/>
+  <text x="300" y="736" text-anchor="middle" fill="#C9A96E" font-family="Georgia, serif" font-size="12" letter-spacing="4">EFFORTLESS EVERYDAY</text>
+  <text x="300" y="762" text-anchor="middle" fill="#FAF6EE" font-family="Georgia, serif" font-size="20" font-weight="600" letter-spacing="2">DAILY WEAR</text>
+</svg>

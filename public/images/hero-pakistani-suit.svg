@@ -1,0 +1,342 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none">
+  <defs>
+    <!-- Background Vignette Gradient -->
+    <radialGradient id="heroAtmosphere" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#222026" />
+      <stop offset="45%" stop-color="#141317" />
+      <stop offset="85%" stop-color="#0A0A0C" />
+      <stop offset="100%" stop-color="#050506" />
+    </radialGradient>
+
+    <!-- Warm Champagne Studio Rim Lighting -->
+    <radialGradient id="goldenRimGlow" cx="50%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#E5CFA0" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#C9A96E" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#C9A96E" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Floor Reflection Gradient -->
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D0D10" />
+      <stop offset="100%" stop-color="#050506" />
+    </linearGradient>
+
+    <!-- Fabric: Pure Silk Organza Ivory -->
+    <linearGradient id="silkIvory" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="35%" stop-color="#FAF6EE" />
+      <stop offset="70%" stop-color="#EFE6D5" />
+      <stop offset="100%" stop-color="#DFD4BE" />
+    </linearGradient>
+
+    <!-- Sheer Dupatta Translucent Shading -->
+    <linearGradient id="sheerDupatta" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.75" />
+      <stop offset="40%" stop-color="#FBF7EE" stop-opacity="0.55" />
+      <stop offset="80%" stop-color="#EADBBE" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#C9A96E" stop-opacity="0.25" />
+    </linearGradient>
+
+    <!-- Zari Champagne Gold Shimmer -->
+    <linearGradient id="zariGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF3DA" />
+      <stop offset="30%" stop-color="#E5CFA0" />
+      <stop offset="70%" stop-color="#C9A96E" />
+      <stop offset="100%" stop-color="#9C7B3C" />
+    </linearGradient>
+
+    <!-- Blush Rose Resham Threadwork -->
+    <linearGradient id="blushResham" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4C2CC" />
+      <stop offset="50%" stop-color="#E29DAA" />
+      <stop offset="100%" stop-color="#C47382" />
+    </linearGradient>
+
+    <!-- Skin Tone Gradient (Model Portrait) -->
+    <linearGradient id="skinTone" x1="30%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#F1D1B7" />
+      <stop offset="50%" stop-color="#E3BD9E" />
+      <stop offset="100%" stop-color="#C79D7C" />
+    </linearGradient>
+
+    <!-- Model Hair Gloss Gradient -->
+    <linearGradient id="hairGloss" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A2525" />
+      <stop offset="40%" stop-color="#151214" />
+      <stop offset="100%" stop-color="#080708" />
+    </linearGradient>
+
+    <!-- Lace Cutwork & Needlework Pattern -->
+    <pattern id="organzaLace" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 0 15 Q 15 0, 30 15 Q 15 30, 0 15 Z" fill="none" stroke="#D8C7A5" stroke-width="0.8" opacity="0.6" />
+      <circle cx="15" cy="15" r="3.5" fill="#E5CFA0" opacity="0.75" />
+      <circle cx="15" cy="15" r="1.5" fill="#E29DAA" opacity="0.9" />
+    </pattern>
+
+    <!-- Subtle studio bokeh lights -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- ================= 1. STUDIO SETTING & BACKDROP ================= -->
+  <rect width="800" height="1000" fill="url(#heroAtmosphere)" />
+  <rect width="800" height="1000" fill="url(#goldenRimGlow)" />
+
+  <!-- Studio Floor & Shadow Plane -->
+  <rect y="840" width="800" height="160" fill="url(#floorGrad)" opacity="0.95" />
+  <ellipse cx="400" cy="855" rx="260" ry="24" fill="#000000" opacity="0.7" />
+
+  <!-- Mughal Architectural Arch Outline in Dark Gold -->
+  <path
+    d="M 120 900 L 120 320 C 120 180, 240 100, 400 60 C 560 100, 680 180, 680 320 L 680 900"
+    fill="none"
+    stroke="#C9A96E"
+    stroke-width="1.2"
+    stroke-dasharray="6 4"
+    opacity="0.35"
+  />
+  <path
+    d="M 140 900 L 140 330 C 140 200, 250 125, 400 90 C 550 125, 660 200, 660 330 L 660 900"
+    fill="none"
+    stroke="#C9A96E"
+    stroke-width="0.6"
+    opacity="0.2"
+  />
+
+  <!-- Studio Ambient Light Particles / Sparkles -->
+  <g opacity="0.65">
+    <circle cx="210" cy="180" r="1.8" fill="#FDF3DA" />
+    <circle cx="260" cy="240" r="1.2" fill="#E5CFA0" />
+    <circle cx="580" cy="190" r="1.5" fill="#FDF3DA" />
+    <circle cx="620" cy="280" r="2.2" fill="#C9A96E" opacity="0.8" />
+    <circle cx="160" cy="420" r="1.4" fill="#E5CFA0" />
+    <circle cx="650" cy="540" r="1.6" fill="#FDF3DA" />
+    <circle cx="530" cy="130" r="2" fill="#FFF9EB" />
+  </g>
+
+  <!-- ================= 2. FASHION COUTURE MODEL SILHOUETTE ================= -->
+
+  <!-- Flowing Sheer Dupatta (Back Layer & Billowing Drape) -->
+  <g id="dupatta-back">
+    <!-- Right draped cascade -->
+    <path
+      d="M 450 250 C 560 300, 630 450, 610 650 C 595 790, 520 860, 480 870 C 490 770, 510 620, 470 480 C 455 420, 440 330, 450 250 Z"
+      fill="url(#sheerDupatta)"
+      stroke="url(#zariGold)"
+      stroke-width="1.2"
+    />
+    <!-- Left flutter drape -->
+    <path
+      d="M 330 260 C 220 310, 160 440, 170 620 C 180 730, 220 830, 260 860 C 230 760, 220 630, 250 510 C 275 420, 305 340, 330 260 Z"
+      fill="url(#sheerDupatta)"
+      stroke="url(#zariGold)"
+      stroke-width="1.2"
+    />
+  </g>
+
+  <!-- Wide-Leg Ivory Palazzo Trousers (Bottom) -->
+  <g id="trousers">
+    <path
+      d="M 270 660 L 530 660 L 610 855 L 435 860 L 400 750 L 365 860 L 190 855 Z"
+      fill="url(#silkIvory)"
+      stroke="#C9A96E"
+      stroke-width="1"
+    />
+    <!-- Trouser Cutwork Lace Border Panels -->
+    <rect x="195" y="820" width="165" height="35" fill="url(#organzaLace)" stroke="#C9A96E" stroke-width="1" />
+    <rect x="440" y="820" width="165" height="35" fill="url(#organzaLace)" stroke="#C9A96E" stroke-width="1" />
+    <!-- Scalloped Hem Detail -->
+    <path d="M 190 855 Q 205 860, 220 855 T 250 855 T 280 855 T 310 855 T 340 855 T 365 855" fill="none" stroke="#C9A96E" stroke-width="1.5" />
+    <path d="M 435 855 Q 450 860, 465 855 T 495 855 T 525 855 T 555 855 T 585 855 T 610 855" fill="none" stroke="#C9A96E" stroke-width="1.5" />
+    <!-- Strappy Champagne Gold Heels -->
+    <path d="M 270 860 L 290 860 Q 295 878, 275 880 Z" fill="#D4B886" />
+    <path d="M 510 860 L 530 860 Q 535 878, 515 880 Z" fill="#D4B886" />
+  </g>
+
+  <!-- Kurta Base & Tunic Body -->
+  <g id="kurta">
+    <!-- Kurta Flared A-Line Cut -->
+    <path
+      d="M 290 280 L 400 300 L 510 280 L 545 680 L 255 680 Z"
+      fill="url(#silkIvory)"
+      stroke="#D6C7AA"
+      stroke-width="1.8"
+    />
+
+    <!-- Kurta Side Slits & Gold Zari Piping -->
+    <line x1="285" y1="520" x2="255" y2="680" stroke="url(#zariGold)" stroke-width="2.5" />
+    <line x1="515" y1="520" x2="545" y2="680" stroke="url(#zariGold)" stroke-width="2.5" />
+
+    <!-- Daman (Bottom Border) Lace Insertion Panel -->
+    <rect x="257" y="640" width="286" height="40" fill="url(#organzaLace)" stroke="url(#zariGold)" stroke-width="1.5" />
+    <!-- Scalloped Embroidery Edge on Kurta Daman -->
+    <path
+      d="M 255 680 C 275 688, 295 680, 315 688 C 335 680, 355 688, 375 680 C 395 688, 415 680, 435 688 C 455 680, 475 688, 495 680 C 515 688, 535 680, 545 680"
+      fill="none"
+      stroke="url(#zariGold)"
+      stroke-width="2.2"
+    />
+
+    <!-- Central Placket with Resham Embroidery & Pearl Buttons -->
+    <rect x="388" y="295" width="24" height="240" fill="#FAF6EE" stroke="url(#zariGold)" stroke-width="1" />
+    <!-- Pearl Buttons on Placket -->
+    <g fill="#FFFFFF" stroke="#C9A96E" stroke-width="0.8">
+      <circle cx="400" cy="330" r="3.5" />
+      <circle cx="400" cy="365" r="3.5" />
+      <circle cx="400" cy="400" r="3.5" />
+      <circle cx="400" cy="435" r="3.5" />
+      <circle cx="400" cy="470" r="3.5" />
+      <circle cx="400" cy="505" r="3.5" />
+    </g>
+
+    <!-- Resham Floral Bouquets on Kurta Body -->
+    <g transform="translate(320, 380)">
+      <!-- Left Floral Spray -->
+      <path d="M 0 0 Q -25 30, -10 60" stroke="#7C8F69" stroke-width="1.2" fill="none" />
+      <circle cx="-18" cy="18" r="4.5" fill="url(#blushResham)" />
+      <circle cx="-25" cy="35" r="5.5" fill="url(#blushResham)" />
+      <circle cx="-12" cy="50" r="4" fill="url(#zariGold)" />
+      <circle cx="-8" cy="28" r="2.5" fill="#E29DAA" />
+    </g>
+    <g transform="translate(480, 380)">
+      <!-- Right Floral Spray -->
+      <path d="M 0 0 Q 25 30, 10 60" stroke="#7C8F69" stroke-width="1.2" fill="none" />
+      <circle cx="18" cy="18" r="4.5" fill="url(#blushResham)" />
+      <circle cx="25" cy="35" r="5.5" fill="url(#blushResham)" />
+      <circle cx="12" cy="50" r="4" fill="url(#zariGold)" />
+      <circle cx="8" cy="28" r="2.5" fill="#E29DAA" />
+    </g>
+
+    <!-- Intricate Yoke / Galapatti Neckline Embroidery -->
+    <path
+      d="M 335 285 C 335 375, 465 375, 465 285"
+      fill="none"
+      stroke="url(#zariGold)"
+      stroke-width="6"
+    />
+    <path
+      d="M 345 290 C 345 365, 455 365, 455 290"
+      fill="none"
+      stroke="url(#blushResham)"
+      stroke-width="3"
+    />
+  </g>
+
+  <!-- Sleeves with Wide Embroidered Bell Cuffs -->
+  <g id="sleeves">
+    <!-- Left Sleeve -->
+    <path
+      d="M 305 280 L 235 380 L 195 510 L 265 525 L 295 420 L 330 310 Z"
+      fill="url(#silkIvory)"
+      stroke="#D6C7AA"
+      stroke-width="1.2"
+    />
+    <rect x="195" y="480" width="70" height="35" transform="rotate(-12 195 480)" fill="url(#organzaLace)" stroke="url(#zariGold)" stroke-width="1.2" />
+
+    <!-- Right Sleeve -->
+    <path
+      d="M 495 280 L 565 380 L 605 510 L 535 525 L 505 420 L 470 310 Z"
+      fill="url(#silkIvory)"
+      stroke="#D6C7AA"
+      stroke-width="1.2"
+    />
+    <rect x="535" y="480" width="70" height="35" transform="rotate(12 535 480)" fill="url(#organzaLace)" stroke="url(#zariGold)" stroke-width="1.2" />
+
+    <!-- Elegant Hands & Gold Bangles -->
+    <ellipse cx="225" cy="535" rx="8" ry="16" transform="rotate(-15 225 535)" fill="url(#skinTone)" />
+    <circle cx="222" cy="518" r="10" fill="none" stroke="url(#zariGold)" stroke-width="2.5" />
+    <circle cx="220" cy="514" r="10" fill="none" stroke="url(#zariGold)" stroke-width="1.5" />
+
+    <ellipse cx="575" cy="535" rx="8" ry="16" transform="rotate(15 575 535)" fill="url(#skinTone)" />
+    <circle cx="578" cy="518" r="10" fill="none" stroke="url(#zariGold)" stroke-width="2.5" />
+    <circle cx="580" cy="514" r="10" fill="none" stroke="url(#zariGold)" stroke-width="1.5" />
+  </g>
+
+  <!-- Model Neck, Face, Hair & Jewelry Portrait -->
+  <g id="portrait">
+    <!-- Graceful Slender Neck -->
+    <path d="M 370 200 L 370 295 L 430 295 L 430 200 Z" fill="url(#skinTone)" />
+    <!-- Collarbone Shading -->
+    <path d="M 375 270 Q 400 282, 425 270" stroke="#C79D7C" stroke-width="1.5" fill="none" opacity="0.6" />
+
+    <!-- Layered Polki & Pearl Choker Necklace -->
+    <path d="M 368 245 Q 400 265, 432 245" fill="none" stroke="url(#zariGold)" stroke-width="4" />
+    <path d="M 365 258 Q 400 285, 435 258" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="2 3" />
+    <!-- Pearl Drops -->
+    <circle cx="390" cy="272" r="2.5" fill="#FFFFFF" stroke="#C9A96E" stroke-width="0.5" />
+    <circle cx="400" cy="275" r="3.2" fill="#FFFFFF" stroke="#C9A96E" stroke-width="0.5" />
+    <circle cx="410" cy="272" r="2.5" fill="#FFFFFF" stroke="#C9A96E" stroke-width="0.5" />
+
+    <!-- Model Face Oval (Side Profile / Three-Quarter Elegance) -->
+    <path
+      d="M 355 145 C 355 85, 445 85, 445 145 C 445 190, 425 220, 400 225 C 375 220, 355 190, 355 145 Z"
+      fill="url(#skinTone)"
+    />
+
+    <!-- Luscious Dark Updo Hair & Bun -->
+    <path
+      d="M 345 140 C 340 75, 460 75, 455 140 C 465 110, 455 60, 400 55 C 345 60, 335 110, 345 140 Z"
+      fill="url(#hairGloss)"
+    />
+    <ellipse cx="400" cy="70" rx="42" ry="26" fill="url(#hairGloss)" />
+    <circle cx="400" cy="62" r="6" fill="#C9A96E" opacity="0.8" />
+
+    <!-- Royal Chandbali / Jhumka Gold Earrings -->
+    <g transform="translate(346, 175)">
+      <circle cx="0" cy="0" r="3" fill="url(#zariGold)" />
+      <path d="M -5 6 Q 0 16, 5 6 Z" fill="url(#zariGold)" />
+      <circle cx="-3" cy="18" r="1.5" fill="#FFFFFF" />
+      <circle cx="0" cy="19" r="1.8" fill="#FFFFFF" />
+      <circle cx="3" cy="18" r="1.5" fill="#FFFFFF" />
+    </g>
+    <g transform="translate(454, 175)">
+      <circle cx="0" cy="0" r="3" fill="url(#zariGold)" />
+      <path d="M -5 6 Q 0 16, 5 6 Z" fill="url(#zariGold)" />
+      <circle cx="-3" cy="18" r="1.5" fill="#FFFFFF" />
+      <circle cx="0" cy="19" r="1.8" fill="#FFFFFF" />
+      <circle cx="3" cy="18" r="1.5" fill="#FFFFFF" />
+    </g>
+
+    <!-- Elegant Facial Features -->
+    <!-- Eyes, brows & soft lips in high fashion lookbook aesthetic -->
+    <path d="M 372 135 Q 384 132, 394 136" stroke="#2B1A14" stroke-width="1.8" fill="none" stroke-linecap="round" />
+    <path d="M 406 136 Q 416 132, 428 135" stroke="#2B1A14" stroke-width="1.8" fill="none" stroke-linecap="round" />
+    <!-- Winged kohl eyeliner -->
+    <path d="M 374 145 Q 384 140, 393 146" stroke="#1F1612" stroke-width="1.5" fill="none" />
+    <path d="M 407 146 Q 416 140, 426 145" stroke="#1F1612" stroke-width="1.5" fill="none" />
+    <!-- Delicate nose contour -->
+    <path d="M 400 144 L 398 165 L 404 167" stroke="#C59C7B" stroke-width="1.2" fill="none" stroke-linecap="round" />
+    <!-- Soft rose tinted lips -->
+    <path d="M 388 184 Q 400 179, 412 184 Q 400 192, 388 184 Z" fill="url(#blushResham)" stroke="#9C4456" stroke-width="0.5" />
+    <line x1="391" y1="184" x2="409" y2="184" stroke="#7A2D3C" stroke-width="0.8" />
+  </g>
+
+  <!-- Sheer Front Dupatta Fall & Shoulder Pallu -->
+  <path
+    d="M 355 255 C 315 360, 290 520, 320 720 C 330 760, 350 790, 360 810 C 375 720, 385 580, 380 430 C 375 350, 365 290, 355 255 Z"
+    fill="url(#sheerDupatta)"
+    stroke="url(#zariGold)"
+    stroke-width="1.2"
+  />
+
+  <!-- ================= 3. EDITORIAL LUXURY WATERMARK & BRANDING ================= -->
+  <!-- Top Luxury Label Pill -->
+  <g transform="translate(400, 45)">
+    <rect x="-110" y="0" width="220" height="28" rx="14" fill="#0B0B0C" fill-opacity="0.85" stroke="#C9A96E" stroke-width="0.8" />
+    <text x="0" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="3" fill="#C9A96E" text-anchor="middle">
+      HOOR FAB · HAUTE COUTURE
+    </text>
+  </g>
+
+  <!-- Editorial Bottom Corner Stamp -->
+  <g transform="translate(45, 940)">
+    <text x="0" y="0" font-family="'Playfair Display', Georgia, serif" font-size="16" font-style="italic" fill="#F7F3EB" opacity="0.9">
+      Pakistani Organza Edit
+    </text>
+    <text x="0" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2" fill="#C9A96E" opacity="0.8">
+      HAND-EMBROIDERED RESHAM &amp; ZARI
+    </text>
+  </g>
+</svg>

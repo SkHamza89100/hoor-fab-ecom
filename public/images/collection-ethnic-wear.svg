@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <defs>
+    <radialGradient id="partyAtmosphere" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#1B1724" />
+      <stop offset="45%" stop-color="#110E17" />
+      <stop offset="85%" stop-color="#0B090F" />
+      <stop offset="100%" stop-color="#050407" />
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="50%" cy="32%" r="48%">
+      <stop offset="0%" stop-color="#FFDCA8" stop-opacity="0.32" />
+      <stop offset="60%" stop-color="#C9A96E" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#C9A96E" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="noirMidnight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#282236" />
+      <stop offset="40%" stop-color="#1C1826" />
+      <stop offset="80%" stop-color="#120F1A" />
+      <stop offset="100%" stop-color="#0A080E" />
+    </linearGradient>
+    <linearGradient id="zariGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5DE" />
+      <stop offset="35%" stop-color="#E8CE94" />
+      <stop offset="75%" stop-color="#C9A96E" />
+      <stop offset="100%" stop-color="#8F7138" />
+    </linearGradient>
+    <linearGradient id="sheerGoldTissue" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFFDF6" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#E9D6B0" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#C9A96E" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="skin" x1="30%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#F3D5C0" />
+      <stop offset="100%" stop-color="#D0A485" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#partyAtmosphere)" />
+  <rect width="600" height="800" fill="url(#goldGlow)" />
+
+  <!-- Studio Frame -->
+  <path d="M 50 740 L 50 220 C 50 110, 160 50, 300 30 C 440 50, 550 110, 550 220 L 550 740 Z" stroke="url(#zariGold)" stroke-opacity="0.4" stroke-width="1.5" fill="none"/>
+  <circle cx="300" cy="46" r="4" fill="url(#zariGold)" opacity="0.85"/>
+
+  <!-- Model Posture & Hair -->
+  <g transform="translate(300, 155)">
+    <!-- Ornate Bridal Bun & Maang Tikka -->
+    <circle cx="0" cy="-52" r="16" fill="#110E0E"/>
+    <path d="M -24 -44 C -28 -68, 28 -68, 24 -44 C 22 -28, 18 -14, 0 -12 C -18 -14, -22 -28, -24 -44 Z" fill="#110E0E"/>
+    <!-- Face / Neck -->
+    <path d="M -13 -36 C -13 -18, 13 -18, 13 -36 C 13 -45, -13 -45, -13 -36 Z" fill="url(#skin)"/>
+    <path d="M -8 -18 L 8 -18 L 10 12 L -10 12 Z" fill="url(#skin)"/>
+    <!-- Maang Tikka & Jhumkas -->
+    <circle cx="0" cy="-34" r="2.5" fill="url(#zariGold)"/>
+    <line x1="0" y1="-48" x2="0" y2="-34" stroke="url(#zariGold)" stroke-width="1.5"/>
+    <circle cx="-16" cy="-26" r="3" fill="url(#zariGold)"/>
+    <circle cx="16" cy="-26" r="3" fill="url(#zariGold)"/>
+    <!-- Gold Choker Necklace -->
+    <path d="M -8 -4 Q 0 4, 8 -4" stroke="url(#zariGold)" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <!-- Festive Royal Sharara Ensemble -->
+  <g transform="translate(300, 205)">
+    <!-- Dramatic Flared Tiered Sharara Bottoms -->
+    <path d="M -45 130 L -120 395 L -10 395 L -2 210 L 2 210 L 10 395 L 120 395 L 45 130 Z" fill="url(#noirMidnight)" stroke="url(#zariGold)" stroke-width="1.8"/>
+
+    <!-- Sharara Tier 1 Gota Patti -->
+    <path d="M -80 260 Q -45 272, -10 260" stroke="url(#zariGold)" stroke-width="2.5" fill="none"/>
+    <path d="M 10 260 Q 45 272, 80 260" stroke="url(#zariGold)" stroke-width="2.5" fill="none"/>
+    <!-- Sharara Tier 2 Gota Patti -->
+    <path d="M -102 330 Q -56 345, -10 330" stroke="url(#zariGold)" stroke-width="2.5" fill="none"/>
+    <path d="M 10 330 Q 56 345, 102 330" stroke="url(#zariGold)" stroke-width="2.5" fill="none"/>
+    <!-- Massive Scalloped Zari Bottom Border -->
+    <rect x="-120" y="380" width="110" height="15" fill="url(#zariGold)" fill-opacity="0.3"/>
+    <line x1="-120" y1="380" x2="-10" y2="380" stroke="url(#zariGold)" stroke-width="2"/>
+    <rect x="10" y="380" width="110" height="15" fill="url(#zariGold)" fill-opacity="0.3"/>
+    <line x1="10" y1="380" x2="120" y2="380" stroke="url(#zariGold)" stroke-width="2"/>
+
+    <!-- Peplum Style Anarkali Kurta -->
+    <path d="M -46 -18 L -86 72 L -62 84 L -44 18 L -68 145 L 68 145 L 44 18 L 62 84 L 86 72 L 46 -18 Z" fill="url(#noirMidnight)" stroke="url(#zariGold)" stroke-width="2"/>
+
+    <!-- Sweetheart Neckline with Heavy Resham & Sitara Work -->
+    <path d="M -22 -18 Q -10 -4, 0 4 Q 10 -4, 22 -18 Z" fill="url(#zariGold)" fill-opacity="0.3" stroke="url(#zariGold)" stroke-width="2"/>
+    <path d="M -30 -16 Q 0 25, 30 -16" stroke="url(#zariGold)" stroke-width="2.5" fill="none"/>
+    <!-- Intricate Floral Jaal Embroidered Yoke -->
+    <circle cx="0" cy="30" r="4" fill="url(#zariGold)"/>
+    <circle cx="-16" cy="48" r="3.5" fill="url(#zariGold)"/>
+    <circle cx="16" cy="48" r="3.5" fill="url(#zariGold)"/>
+    <circle cx="0" cy="68" r="4.5" fill="url(#zariGold)"/>
+    <circle cx="-25" cy="85" r="3" fill="url(#zariGold)"/>
+    <circle cx="25" cy="85" r="3" fill="url(#zariGold)"/>
+    <circle cx="0" cy="105" r="4" fill="url(#zariGold)"/>
+
+    <!-- Peplum Gota Hem -->
+    <line x1="-68" y1="140" x2="68" y2="140" stroke="url(#zariGold)" stroke-width="3"/>
+
+    <!-- Sparkling Embellished Net Dupatta Drape -->
+    <path d="M -35 -14 C -105 15, -150 110, -135 220 C -120 310, -80 380, -110 440 L -150 435 C -180 320, -165 160, -85 15 Z" fill="url(#sheerGoldTissue)" stroke="url(#zariGold)" stroke-width="1.6"/>
+  </g>
+
+  <!-- Footwear & Stance -->
+  <g transform="translate(300, 608)">
+    <ellipse cx="-45" cy="2" rx="14" ry="4" fill="url(#zariGold)"/>
+    <ellipse cx="45" cy="2" rx="14" ry="4" fill="url(#zariGold)"/>
+  </g>
+
+  <!-- Typography & Collection Label -->
+  <line x1="120" y1="710" x2="480" y2="710" stroke="url(#zariGold)" stroke-opacity="0.45" stroke-width="1"/>
+  <text x="300" y="736" text-anchor="middle" fill="#C9A96E" font-family="Georgia, serif" font-size="12" letter-spacing="4">FESTIVE &amp; OCCASION</text>
+  <text x="300" y="762" text-anchor="middle" fill="#FAF6EE" font-family="Georgia, serif" font-size="20" font-weight="600" letter-spacing="2">PARTY WEAR</text>
+</svg>
